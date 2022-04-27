@@ -13,7 +13,7 @@ function onLoginSubmit(event) {
     // form 사용 시 기본으로 실행되는 행동을 무시함.
     // 위 코드는 input text를 입력하고 submit했을 때 페이지가 자동으로 넘어가지 않도록 막아줌
     const username = loginInput.value;
-    localStorage.setItem("USERNAME_KEY", username);
+    localStorage.setItem(USERNAME_KEY, username);
     loginForm.classList.add(HIDDEN_CLASSNAME);
     //greeting.innerText = "Hello, " + username;
     paintGreetings(username);
@@ -25,7 +25,7 @@ function paintGreetings(username) {
     greeting.classList.remove(HIDDEN_CLASSNAME); // greeting에 있는 hidden 삭제 -> 새로고침을 하면 savedUsername에 데이터가 생겨서 else로 넘어오게 되는 원리
 }
 
-const savedUsername = localStorage.getItem("USERNAME_KEY"); // 로컬에 username을 저장
+const savedUsername = localStorage.getItem(USERNAME_KEY); // 로컬에 username을 저장
 
 // 여기까지 가정 밑은 실행
 
