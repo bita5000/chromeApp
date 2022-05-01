@@ -21,3 +21,5 @@ document.body.appendChild(bgImage);
 // const body = document.querySelector("body");
 // 를 추가하여 body 자체에 이미지를 넣어 z-index가 없어도 되게 만들고 싶었는데..
 // appendChild 자체가 이미 "자식" 요소로 추가하는 기능이라 소용이 없었따..
+// document.body.style.backgroundImage = `url('${bgImage}')`;
+// www ㅠㅠ
